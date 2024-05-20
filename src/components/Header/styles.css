@@ -1,0 +1,58 @@
+/* styles.css */
+
+.navbar {
+    background-color: var(--theme);
+    padding: 1rem 1.5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .logo {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .link {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .link:hover {
+    opacity: 1;
+    transition: all 0.3s;
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 379px) {
+    .navbar {
+      padding: 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .logo {
+      margin-bottom: 0.5rem;
+    }
+    
+    .link {
+      margin-top: 0.5rem;
+    }
+  }
+  @media only screen and (max-width: 860px){
+    .navbar{
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 390px){
+    .navbar{
+        width: 400px;
+    }
+  }
+  

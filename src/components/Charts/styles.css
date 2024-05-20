@@ -1,0 +1,69 @@
+/* chartComponent.css */
+
+.charts-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px; /* Add some padding for spacing */
+  }
+  
+  .chart-container {
+    padding: 20px; /* Add padding inside each chart container */
+    background-color: #fff; /* Optional: add background color */
+    border-radius: 8px; /* Optional: add border radius */
+    box-shadow: 1px 1px 20px rgb(136, 143, 145); /* Apply shadow */
+    overflow: hidden; /* Hide any overflowing content */
+  }
+  
+  .line-chart-container {
+    width: 60%; /* Set width for line chart container */
+  }
+  
+  .pie-chart-container {
+    width: 30%; /* Set width for pie chart container */
+    height: 100%;
+  }
+  
+  .chart-title {
+    margin-top: 0;
+  }
+  
+  /* styles.css */
+
+.charts-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow charts to wrap to the next line on smaller screens */
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .chart-container {
+    width: calc(50% - 20px); /* Take up 50% of the container width with some spacing */
+    margin-bottom: 20px; /* Add some spacing between chart containers */
+  }
+  
+   .line-chart-container {
+    width: 100%; /* Line chart should take up full width on small screens */
+  } 
+  
+   .pie-chart-container {
+    width: 100%; /* Pie chart should take up full width on small screens */
+  }  
+  
+  .chart-title {
+    margin-top: 0;
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* Adjust for medium screens */
+    .chart-container {
+      width: calc(50% - 20px); /* Take up 50% of the container width with some spacing */
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    /* Adjust for large screens */
+    .chart-container {
+      width: calc(33.33% - 20px); /* Take up 33.33% of the container width with some spacing */
+    }
+  }
+  
